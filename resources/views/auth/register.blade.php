@@ -12,7 +12,7 @@
 <body>
     <main class="flex flex-col items-center justify-center h-screen w-screen bg-gray-100 p-4">
         <!-- Registration container -->
-        <div class="w-full max-w-md md:max-w-lg lg:max-w-xl p-4 border-2 bg-white rounded-lg shadow-md">
+        <div class="w-full max-w-md md:max-w-lg p-4 border-2 bg-white rounded-lg shadow-md">
             <h1 class="text-center font-bold text-2xl font-serif mb-4">Register a New Faculty Teacher</h1>
             <form class="space-y-4">
                 <!-- Email field -->
