@@ -14,7 +14,8 @@ Route::put('/calendar/{id}/resize', [CalendarEventsController::class, 'resizeEve
 Route::put('/calendar/search', [CalendarEventsController::class, 'searchEvent']);
 
 // Routes for navigation menus
-Route::get('/dashboard/home', [NavigationController::class, 'dashboardFunction'])->name('pages.index');
+Route::get('/', [NavigationController::class, 'indexFunction'])->name('index');
+Route::get('/dashboard/home', [NavigationController::class, 'dashboardFunction'])->name('pages.home');
 Route::get('/dashboard/schedules', [NavigationController::class, 'scheduleFunction'])->name('pages.schedule');
 Route::get('/dashboard/subjects', [NavigationController::class, 'subjectsFunction'])->name('pages.subjects');
 Route::get('/dashboard/classroom', [NavigationController::class, 'classroomFunction'])->name('pages.classroom');

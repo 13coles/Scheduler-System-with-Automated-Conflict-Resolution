@@ -9,7 +9,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="flex justify-center h-screen overflow-x-hidden">
-        <header class="z-10 hidden md:block">
+        <header class="hidden md:block">
             <!-- Sidebar navigation menu -->
             <nav id="nav-bar" class="fixed top-0 left-0 h-full w-64 bg-yellow-500 flex flex-col text-white transition-all duration-200">
                 <div id="nav-header" class="flex items-center justify-start p-2 min-h-[60px]">
@@ -23,7 +23,7 @@
                     <!-- Navigation menu buttons -->
                     <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-yellow-600 transition-colors duration-200 cursor-pointer">
                         <i class="fas fa-home text-gray-950 w-6 ml-4"></i>
-                        <a href="{{ route('pages.index') }}" class="text-gray-950 font-medium w-full text-left no-underline">
+                        <a href="{{ route('pages.home') }}" class="text-gray-950 font-medium w-full text-left no-underline">
                             Home
                         </a> <!-- Home nav button -->
                     </div>

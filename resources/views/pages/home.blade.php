@@ -62,7 +62,7 @@
 
     <div class="container mt-2 max-w-fit">
         <div class="card overflow-hidden" style="border: 1px solid #ddd; border-radius: 0.5rem; background-color: lightgray">
-            <div class="card-body p-0 overflow-y-auto md:h-[450px]">
+            <div class="card-body p-0 overflow-y-auto md:h-[500px]">
                 <div class="w-full min-h-[430px] max-h-[800px] cursor-pointer" id="calendar"></div>
             </div>
         </div>

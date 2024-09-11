@@ -8,8 +8,11 @@ use Illuminate\Http\Request;
 
 class NavigationController extends Controller
 {
+    public function indexFunction() {
+        return view('index');
+    }
     public function dashboardFunction() {
-        return view('pages.index');
+        return view('pages.home');
     }
 
     public function scheduleFunction() {

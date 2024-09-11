@@ -13,7 +13,7 @@
 <body class="flex justify-center h-screen overflow-hidden">
     @include('components.sidebar')
 
-    <main class="md:w-screen w-screen">
+    <main class="w-screen">
         <!-- Head Elements -->
         {{-- For big screens --}}
         <span class="hidden md:block">
@@ -35,7 +35,7 @@
                             <span class="font-semibold">Admin</span>
                             <i class="fas fa-chevron-down ml-2"></i>
                         </button>
-                        <div class="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg hidden group-hover:block">
+                        <div class="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg hidden group-hover:block z-50">
                             <div class="p-2">
                                 <a href="{{ route('pages.profile') }}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
                                 <button class="flex items-center px-4 py-2 text-red-600 hover:bg-red-100 w-full text-left">
@@ -45,25 +45,26 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </span>
 
         {{-- For mobile screen --}}
         <span class="block md:hidden">
-            <div class="flex items-center justify-end ml-11 mx-auto bg-gray-50 p-4">
+            <div class="flex items-center justify-end bg-gray-50 p-4">
                 <div class="flex items-center space-x-4">
                     <div class="relative inline-block">
                         <i class="fas fa-bell text-xl"></i>
                         <span class="absolute top-0 right-0 block w-3 h-3 bg-red-500 text-white text-xs font-bold rounded-full text-center">0</span>
                     </div>
-                    <div class="relative group mr-20">
+                    <div class="relative group">
                         <button class="flex items-center space-x-2 p-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
                             <img src="https://gravatar.com/avatar/4474ca42d303761c2901fa819c4f2547" alt="Avatar" class="w-10 h-10 rounded-full">
                             <span class="font-semibold hidden">Admin</span>
                             <i class="fas fa-chevron-down ml-2"></i>
                         </button>
-                        <div class="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg hidden group-hover:block">
+                        <div class="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-lg shadow-lg hidden group-hover:block z-50">
                             <div class="p-2">
                                 <a href="{{ route('pages.profile') }}" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profile</a>
                                 <button class="flex items-center px-4 py-2 text-red-600 hover:bg-red-100 w-full text-left">
@@ -77,21 +78,27 @@
             </div>
         </span>
 
-        <div class="tables w-screen-2xl h-screen md:ml-64 bg-white p-6  shadow-lg">
+
+        <div class="tables w-screen-2xl h-screen md:ml-64 bg-white p-6 shadow-lg relative">
             @yield('body') 
+
         </div>
     </main>
 
     {{-- JQuery script --}}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     {{-- Full calendar script --}}
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+
     {{-- Exporting to excel script --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
     {{-- Tailwind and bootstrap scripts--}}
-    <script defer src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     @yield('scripts')
+    
 </body>
 </html>
