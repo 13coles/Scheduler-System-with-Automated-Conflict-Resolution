@@ -10,7 +10,7 @@
     <div class="row">
         <div class="w-fit">
             <div class="input-control ml-4 mr-4 flex items-center justify-end gap-2">
-                <input type="text" name="eventSearch" id="search" placeholder="Search event.." class="p-2 border-2 rounded-md">
+                <input type="text" name="eventSearch" id="search" placeholder="Search event.." class="p-2 border-2 rounded-sm">
                 <button id="search-button" class="btn btn-primary">Search</button>
 
                 {{-- For large screens button --}}
@@ -29,7 +29,7 @@
     <div class="modal fade" id="calendar-events" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header bg-[#800000] text-neutral-100">
+                <div class="modal-header bg-[#223a5e] text-neutral-100">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Create Calendar Activities</h1>
                 </div>
                 <div class="modal-body w-full">
@@ -52,8 +52,8 @@
 
                     {{-- Buttons --}}
                     <div class="flex justify-end gap-2 col-span-2 mt-3">
-                        <button type="button" class="border-[#800000] border-2 p-2 w-[120px] text-[#800000] rounded-lg" data-bs-dismiss="modal">Cancel</button>
-                        <button type="submit" class="bg-[#800000] p-2 w-[120px] text-white rounded-lg" id="save" data-bs-dismiss="modal">Save Event</button>
+                        <button type="button" class="border-[#223a5e] border-2 p-2 w-[120px] text-[#223a5e] rounded-lg" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="bg-[#223a5e] p-2 w-[120px] text-white rounded-lg" id="save" data-bs-dismiss="modal">Save Event</button>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
     </div>
 
     <div class="container mt-2 max-w-fit">
-        <div class="card overflow-hidden" style="border: 1px solid #ddd; border-radius: 0.5rem; background-color: lightgray">
+        <div class="card overflow-hidden" style="border: 1px solid #141313;">
             <div class="card-body p-0 overflow-y-auto md:h-[500px]">
                 <div class="w-full min-h-[430px] max-h-[800px] cursor-pointer" id="calendar"></div>
             </div>
@@ -71,6 +71,8 @@
 
 @section('scripts')
     <script>
+        // Kaksa lng if want mo kay gn practice ko lng ni pero working nani add nlng kulang
+        
         $(document).ready(function() {
             const searchBtn = document.getElementById('search-button');
             const printBtn = document.getElementById('print-button');
@@ -104,7 +106,7 @@
                 select(start, end, all) {
                     $('#calendar-events').modal('toggle');
                 },
-
+                
                 // Function for deleting events in the calendar
                 eventContent(info) {
                     const eventTitle = info.event.title;

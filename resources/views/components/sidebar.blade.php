@@ -11,7 +11,7 @@
     <body class="flex justify-center h-screen overflow-x-hidden">
         <header class="hidden md:block">
             <!-- Sidebar navigation menu -->
-            <nav id="nav-bar" class="fixed top-0 left-0 h-full w-64 bg-yellow-500 flex flex-col text-white transition-all duration-200">
+            <nav id="nav-bar" class="fixed top-0 left-0 h-full w-64 bg-[#fad302] flex flex-col text-white transition-all duration-200">
                 <div id="nav-header" class="flex items-center justify-start p-2 min-h-[60px]">
                     <!-- System Logo -->
                     <a id="nav-title" href="./index.html" target="_blank">
@@ -21,38 +21,38 @@
                 <div id="nav-content" class="flex-1 overflow-y-auto pt-2">
                     <hr class="border-t border-gray-950">
                     <!-- Navigation menu buttons -->
-                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-yellow-600 transition-colors duration-200 cursor-pointer">
+                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-[#f6f6f4] transition-colors duration-200 cursor-pointer">
                         <i class="fas fa-home text-gray-950 w-6 ml-4"></i>
                         <a href="{{ route('pages.home') }}" class="text-gray-950 font-medium w-full text-left no-underline">
                             Home
                         </a> <!-- Home nav button -->
                     </div>
-                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-yellow-600 transition-colors duration-200 cursor-pointer">
+                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-[#f6f6f4] transition-colors duration-200 cursor-pointer">
                         <i class="fas fa-calendar-day text-gray-950 w-6 ml-4"></i>
                         <a href="{{ route('pages.schedule') }}" class="text-gray-950 font-medium w-full text-left no-underline">
                             Schedules
                         </a> <!-- Schedules nav button -->
                     </div>
-                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-yellow-600 transition-colors duration-200 cursor-pointer">
+                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-[#f6f6f4] transition-colors duration-200 cursor-pointer">
                         <i class="fas fa-chalkboard-teacher text-gray-950 w-6 ml-4"></i>
                         <a href="{{ route('pages.subjects') }}" class="text-gray-950 font-medium w-full text-left no-underline">
                             Subjects
                         </a> <!-- Subjects nav button -->
                     </div>
                     <hr class="border-t border-gray-950 my-2">
-                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-yellow-600 transition-colors duration-200 cursor-pointer">
+                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-[#f6f6f4] transition-colors duration-200 cursor-pointer">
                         <i class="fas fa-door-open text-gray-950 w-6 ml-4"></i>
                         <a href="{{ route('pages.classroom') }}" class="text-black font-medium w-full text-left no-underline">
                             Classroom
                         </a> <!-- Classrooms nav button -->
                     </div>
-                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-yellow-600 transition-colors duration-200 cursor-pointer">
+                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-[#f6f6f4] transition-colors duration-200 cursor-pointer">
                         <i class="fas fa-user text-gray-950 w-6 ml-4"></i>
                         <a href="{{ route('pages.teachers') }}" class="text-gray-950 font-medium w-full text-left no-underline">
                             Teachers
                         </a> <!-- Teachers nav button -->
                     </div>
-                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-yellow-600 transition-colors duration-200 cursor-pointer">
+                    <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-[#f6f6f4] transition-colors duration-200 cursor-pointer">
                         <i class="fas fa-cogs text-gray-950 w-6 ml-4"></i>
                         <a href="" class="text-gray-950 font-medium w-full text-left no-underline">
                             Accounts

@@ -17,16 +17,16 @@
         <!-- Head Elements -->
         {{-- For big screens --}}
         <span class="hidden md:block">
-            <div class="flex items-center justify-between bg-gray-50 p-6 md:ml-64 md:w-screen-2xl">
+            <div class="flex items-center justify-between bg-[#223a5e] p-6 md:ml-64 md:w-screen-2xl">
                 <div class="school-name flex items-center justify-between gap-2">
                     <span>
-                        <img src="../images/download-removebg-preview.png" alt="DepEd logo" class="" width="70" height="70">
+                        <img src="../images/th.jfif" alt="DepEd logo" width="70" height="70">
                     </span>
-                    <h1 class="font-bold md:text-2xl font-serif">Sagay City National High School - Stand Alone</h1>
+                    <h1 class="font-bold md:text-2xl font-serif text-neutral-100">Sagay City National High School - Stand Alone</h1>
                 </div>
                 <div class="flex items-center space-x-4">
                     <div class="relative inline-block">
-                        <i class="fas fa-bell text-xl"></i>
+                        <i class="fas fa-bell text-xl text-white"></i>
                         <span class="absolute top-0 right-0 block w-3 h-3 bg-red-500 text-white text-xs font-bold rounded-full text-center">0</span>
                     </div>
                     <div class="relative group mr-20">
@@ -52,10 +52,10 @@
 
         {{-- For mobile screen --}}
         <span class="block md:hidden">
-            <div class="flex items-center justify-end bg-gray-50 p-4">
+            <div class="flex items-center justify-end bg-[#223a5e] p-4">
                 <div class="flex items-center space-x-4">
                     <div class="relative inline-block">
-                        <i class="fas fa-bell text-xl"></i>
+                        <i class="fas fa-bell text-xl text-white"></i>
                         <span class="absolute top-0 right-0 block w-3 h-3 bg-red-500 text-white text-xs font-bold rounded-full text-center">0</span>
                     </div>
                     <div class="relative group">
@@ -79,7 +79,7 @@
         </span>
 
 
-        <div class="tables w-screen-2xl h-screen md:ml-64 bg-white p-6 shadow-lg relative">
+        <div class="tables w-screen-2xl h-screen md:ml-64 bg-neutral-50 p-6 shadow-lg relative">
             @yield('body') 
 
         </div>

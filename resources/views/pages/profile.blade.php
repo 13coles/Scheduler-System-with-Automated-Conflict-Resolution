@@ -9,7 +9,7 @@
         
         {{-- Profile Picture Section  --}}
         <div class="flex flex-col items-center md:flex-row md:items-center md:ml-8 md:mt-8">
-            <div class="relative w-32 h-32 md:w-40 md:h-40 border-[#800000] border-4 rounded-full overflow-hidden flex items-center justify-center">
+            <div class="relative w-32 h-32 md:w-40 md:h-40 bg-[#223a5e] border-4 rounded-full overflow-hidden flex items-center justify-center">
                 <img src="" alt="User Profile" class="w-full h-full object-cover">
                 <input type="file" id="profile-pic-upload" class="absolute inset-0 opacity-0 cursor-pointer">
             </div>
@@ -29,10 +29,10 @@
             <input type="password" placeholder="Password" name="profilePassword" id="profile-password" class="p-2 bg-zinc-300 rounded-sm w-full">
             <input type="password" placeholder="New Password" name="profileNewPass" id="profile-new-pass" class="p-2 bg-zinc-300 rounded-sm w-full">
         </div>
-    </form>
 
-    {{-- Update Profile Button --}}
-    <div class="flex items-center justify-center md:justify-end mt-8 md:mt-14 p-4">
-        <button class="bg-blue-600 text-white p-2 w-full md:w-40 rounded-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Update Profile</button>
-    </div>
+        {{-- Update Profile Button --}}
+        <div class="flex items-center justify-center md:justify-end mt-8 md:mt-14 p-4">
+            <button class="bg-[#223a5e] text-white p-2 w-full md:w-40 rounded-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Update Profile</button>
+        </div>
+    </form>
 @endsection
