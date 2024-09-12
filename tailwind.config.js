@@ -2,7 +2,8 @@
 export default {
   content: [
     "./src/**/*.{html,js}",
-    "./resources/**/*.blade.php"
+    "./resources/**/*.blade.php",
+    "./resources/**/*.js"
   ],
   theme: {
     extend: {},

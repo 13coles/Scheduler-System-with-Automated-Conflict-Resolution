@@ -14,7 +14,7 @@
             <nav id="nav-bar" class="fixed top-0 left-0 h-full w-64 bg-[#fad302] flex flex-col text-white transition-all duration-200">
                 <div id="nav-header" class="flex items-center justify-start p-2 min-h-[60px]">
                     <!-- System Logo -->
-                    <a id="nav-title" href="./index.html" target="_blank">
+                    <a id="nav-title" href="{{ route('pages.home') }}">
                         <img src="{{ URL('images/depedLogo.png') }}" alt="DepEd Logo" class="ml-4" width="90" height="90">
                     </a>
                 </div>

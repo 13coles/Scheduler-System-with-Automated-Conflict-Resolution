@@ -85,14 +85,7 @@
         </div>
     </main>
 
-    {{-- JQuery script --}}
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    {{-- Full calendar script --}}
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
-
-    {{-- Exporting to excel script --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    
 
     {{-- Tailwind and bootstrap scripts--}}
     <script src="https://cdn.tailwindcss.com"></script>

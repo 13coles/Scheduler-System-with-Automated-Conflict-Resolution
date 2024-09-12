@@ -70,9 +70,17 @@
 @endsection
 
 @section('scripts')
+    {{-- JQuery script --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    {{-- Full calendar script --}}
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+
+    {{-- Exporting to excel script --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    
     <script>
         // Kaksa lng if want mo kay gn practice ko lng ni pero working nani add nlng kulang
-        
         $(document).ready(function() {
             const searchBtn = document.getElementById('search-button');
             const printBtn = document.getElementById('print-button');
