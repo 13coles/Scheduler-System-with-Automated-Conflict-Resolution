@@ -32,4 +32,7 @@ class NavigationController extends Controller
     public function classroomFunction() {
         return view('pages.classroom');
     }
+    public function accountsFunction() {
+        return view('pages.accounts');
+    }
 }

@@ -29,7 +29,6 @@
             </div>
             <!-- Login button -->
             <button type="submit" class="btn bg-blue-500 text-white w-full p-2 hover:bg-blue-400">Login</button>
-            <a href="">Register as New Faculty</a>
         </form>
     </div>
 

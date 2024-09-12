@@ -54,7 +54,7 @@
                     </div>
                     <div class="nav-button flex items-center gap-2 py-3 pl-4 hover:bg-[#f6f6f4] transition-colors duration-200 cursor-pointer">
                         <i class="fas fa-cogs text-gray-950 w-6 ml-4"></i>
-                        <a href="" class="text-gray-950 font-medium w-full text-left no-underline">
+                        <a href="{{ route('pages.accounts') }}" class="text-gray-950 font-medium w-full text-left no-underline">
                             Accounts
                         </a> <!-- Profile nav button -->
                     </div>

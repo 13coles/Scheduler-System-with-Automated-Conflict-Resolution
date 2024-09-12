@@ -21,6 +21,7 @@ Route::get('/dashboard/subjects', [NavigationController::class, 'subjectsFunctio
 Route::get('/dashboard/classroom', [NavigationController::class, 'classroomFunction'])->name('pages.classroom');
 Route::get('/dashboard/teachers', [NavigationController::class, 'teachersFunction'])->name('pages.teachers');
 Route::get('/dashboard/profile', [NavigationController::class, 'userProfileFunction'])->name('pages.profile');
+Route::get('/dashboard/accounts', [NavigationController::class, 'accountsFunction'])->name('pages.accounts');
 
 // Routes for authentication
 Route::get('/register', [AuthController::class, 'registerFunction'])->name('auth.register');
